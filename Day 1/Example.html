@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        table{
+        table, th ,td {
             border: 1px solid;
+        }
+
+        area{
+            cursor: pointer;
         }
     </style>
 </head>
@@ -64,18 +68,83 @@
         <li>List 2</li>
         <li>List 3</li>
     </ol>
+    
 
     <table>
+        <colgroup>
+            <col span="2" style="background-color:red">
+            <col style="background-color:yellow"> 
+            
+        </colgroup>
         <tr>
           <th>Month</th>
           <th>Savings</th>
+          <th>spending</th>
         </tr>
         <tr>
-          <td>January</td>
+          <td >January</td>
           <td>$100</td>
+          <td>$80</td>
         </tr>
-      </table>
+        <tr>
+            <td>February</td>
+            <td>$500</td>
+            <td>$90</td>
+        </tr>
+        <tr>
+            <td>March</td>
+            <td>$300</td>
+            <td>$100</td>
+        </tr>
+    </table>
 
+    <table border="1">
+        <tr>
+          <td rowspan="2">Row 1, Cell 1</td>
+          <td>Row 1, Cell 2</td>
+          <td>Row 1, Cell 3</td>
+        </tr>
+    </table>
+
+    <video src="movie.mp4" controls>
+        <source src="mov_bbb.mp4" type="video/mp4">
+    </video>
+
+    <audio controls autoplay>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <object data="photo-1575936123452-b67c3203c357.avif" width="250px" height="200px"></object>
+
+    <embed src="photo-1575936123452-b67c3203c357.avif" width="300px"> <br>Embed photos <br>
+ <hr>
+        <img src="photo-1575936123452-b67c3203c357.avif" alt="photo" usemap="#came" width="500px">
+
+
+        <h1>map</h1>
+        <map name="came"> 
+            <area shape="circle" coords="90,58,8" href="camera.avif" alt="camera">
+        </map>
+
+        
+  <p>This is a sample webpage. You can create a bookmark link to a specific section.</p>
+
+  <!-- Anchor point with an id -->
+  <h2 id="section1">Section 1</h2>
+  <p>This is the content of Section 1.</p>
+
+  <!-- Anchor point with an id -->
+  <h2 id="section2">Section 2</h2>
+  <p>This is the content of Section 2.</p>
+
+  <!-- Bookmark links -->
+  <p><a href="#section1">Go to Section 1</a></p>
+  <p><a href="#section2">Go to Section 2</a></p>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/a3ICNMQW7Ok?si=JN_9N-m7ewVJFPkr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
 </body>
 </html>
 
